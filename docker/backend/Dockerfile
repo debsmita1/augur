@@ -20,7 +20,7 @@ RUN set -x \
 
 EXPOSE 5000
 
-WORKDIR /augur
+WORKDIR ./
 COPY ./README.md .
 COPY ./alembic.ini .
 COPY ./augur/ augur/
