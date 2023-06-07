@@ -32,7 +32,7 @@ COPY ./scripts/ scripts/
 RUN python3 -m venv /opt/venv
 
 RUN set -x \
-    && /opt/venv/bin/pip install .
+    && /opt/venv/bin/pip install . --use-feature=in-tree-build
 
 RUN ./scripts/docker/install-workers-deps.sh
 
